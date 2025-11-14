@@ -205,9 +205,9 @@ Open your browser and navigate to `http://localhost:8501`
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                    Streamlit Frontend (UI)                      │
-│  ┌───────────┐  ┌───────────┐  ┌───────────┐  ┌──────────┐   │
-│  │  Upload   │  │   Chat    │  │  Summary  │  │ Sidebar  │   │
-│  └───────────┘  └───────────┘  └───────────┘  └──────────┘   │
+│  ┌───────────┐  ┌───────────┐  ┌───────────┐  ┌──────────┐      │
+│  │  Upload   │  │   Chat    │  │  Summary  │  │ Sidebar  │      │
+│  └───────────┘  └───────────┘  └───────────┘  └──────────┘      │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -253,38 +253,38 @@ Open your browser and navigate to `http://localhost:8501`
 ### Agent Workflow Diagram
 
 ```
-User Query
-    │
-    ▼
+      User Query
+          │
+          ▼
 ┌─────────────────────┐
 │ AgentState Init     │  → Initialize state with query
 └─────────────────────┘
-    │
-    ▼
+          │
+          ▼
 ┌─────────────────────┐
 │ Retriever Agent     │  → Retrieve relevant docs
 │ state = retrieve()  │     Update state.retrieved_docs
 └─────────────────────┘
-    │
-    ▼
+          │
+          ▼
 ┌─────────────────────┐
 │ Summarizer Agent    │  → Condense information
 │ state = summarize() │     Update state.summary
 └─────────────────────┘
-    │
-    ▼
+          │
+          ▼
 ┌─────────────────────┐
 │ Analyst Agent       │  → Extract insights
 │ state = analyze()   │     Update state.analysis
 └─────────────────────┘
-    │
-    ▼
+          │
+          ▼
 ┌─────────────────────┐
-│ QA Agent           │  → Ensure quality
-│ state = qa()       │     Update state.final_response
+│ QA Agent            │  → Ensure quality
+│ state = qa()        │     Update state.final_response
 └─────────────────────┘
-    │
-    ▼
+          │
+          ▼
 Final Response to User
 ```
 
@@ -344,10 +344,10 @@ multi-agent-document-rag/
 ├── summary.py                  # Summary generation
 ├── ui.py                       # Upload and summary UI
 ├── agents.py                   # Custom agent implementations
-│   ├── retriever_agent()      # Document retrieval logic
-│   ├── summarizer_agent()     # Summarization logic
-│   ├── analyst_agent()        # Analysis logic
-│   └── qa_agent()             # Quality assurance logic
+│   ├── retriever_agent()       # Document retrieval logic
+│   ├── summarizer_agent()      # Summarization logic
+│   ├── analyst_agent()         # Analysis logic
+│   └── qa_agent()              # Quality assurance logic
 ├── utils.py                    # Utility functions
 ├── requirements.txt            # Python dependencies
 ├── .env.example                # Example environment file
