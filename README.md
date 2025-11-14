@@ -1,4 +1,4 @@
-# 🤖 Multi-Agent Document RAG Assistant
+# 🤖 Multi-Agent Document RAG Assistant with LangGraph
 
 > Transform any document into an intelligent conversation system using custom multi-agent architecture and advanced RAG (Retrieval Augmented Generation)
 
