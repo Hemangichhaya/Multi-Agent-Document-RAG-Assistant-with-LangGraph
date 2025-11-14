@@ -553,12 +553,6 @@ Contributions are welcome! This project is open for improvements.
 - [Google AI](https://ai.google.dev/) for Gemini API access
 - [FAISS](https://github.com/facebookresearch/faiss) for efficient vector search
 - [PyPDF](https://pypdf.readthedocs.io/) for PDF processing
-
-## 📧 Contact & Support
-
-- **Issues**: [GitHub Issues](https://github.com/hemangichhaya/multi-agent-document-rag/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/hemangichhaya/multi-agent-document-rag/discussions)
-
 ---
 
 ⭐ **If you find this project helpful, please star the repository!**
